@@ -14,7 +14,7 @@
 [![Gemini](https://img.shields.io/badge/AI-Google%20Gemini-8E75F8?style=for-the-badge&logo=google&logoColor=white)](#ai-menu-assistant)
 
 **[Live demo](https://foodtech-app-mean-stack.onrender.com/)** ·
-**[Video walkthrough](https://www.youtube.com/watch?v=tp4FOE8ud_s)** ·
+**[Video walkthrough](https://www.youtube.com/watch?v=mNUqGhLDCzo)** ·
 **[Buy the source code ($50)](https://wanderlust7783.gumroad.com/l/idjucv)** ·
 **[Book a restaurant demo](mailto:wandertech58@gmail.com?subject=FoodTech%20for%20my%20restaurant)**
 
@@ -97,7 +97,7 @@ Sell FoodTech to your own restaurant clients under your brand. We deploy and sup
 
 ## Video walkthrough
 
-[![Watch the FoodTech walkthrough on YouTube](https://img.youtube.com/vi/tp4FOE8ud_s/maxresdefault.jpg)](https://www.youtube.com/watch?v=tp4FOE8ud_s)
+[![Watch the FoodTech walkthrough on YouTube](https://img.youtube.com/vi/mNUqGhLDCzo/maxresdefault.jpg)](https://www.youtube.com/watch?v=mNUqGhLDCzo)
 
 The video walks through every role: ordering, the kitchen board, driver delivery, dine-in with WhatsApp confirmation, and the admin dashboards.
 
@@ -301,7 +301,7 @@ Gumroad buyers get a license for one commercial or client project per purchase. 
 
 - Email: [wandertech58@gmail.com](mailto:wandertech58@gmail.com)
 - Gumroad: [wanderlust7783.gumroad.com/l/idjucv](https://wanderlust7783.gumroad.com/l/idjucv)
-- Video: [YouTube walkthrough](https://www.youtube.com/watch?v=tp4FOE8ud_s)
+- Video: [YouTube walkthrough](https://www.youtube.com/watch?v=mNUqGhLDCzo)
 
 <div align="center">
 
