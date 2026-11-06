@@ -142,23 +142,9 @@ Customers see a **5-step tracking timeline**: Order placed → Confirmed → On 
 
 ---
 
-## Demo accounts
 
-After configuring `backend/src/.env`, seed demo data from the `backend` folder:
 
-```bash
-cd backend
-npm run seed:rbac
-```
 
-| Email | Password | Role | Routes to try |
-|-------|----------|------|---------------|
-| `customer@foodtech.com` | `12345` | Customer | `/foods`, cart, checkout, `/orders` |
-| `vendor@foodtech.com` | `12345` | Vendor admin | `/vendor/dashboard`, `/vendor/orders` |
-| `delivery@foodtech.com` | `12345` | Delivery | `/delivery` |
-| `super@foodtech.com` | `12345` | Super admin | `/admin` |
-
-> **Production:** Remove or change seed users before going live. Re-login after seeding so JWT includes `role` and `vendorId`.
 
 ---
 
@@ -210,55 +196,7 @@ flowchart LR
 - **Google Gemini API key** — [aistudio.google.com](https://aistudio.google.com/app/apikey)
 - **Stripe account** — test mode keys (works in Pakistan and worldwide)
 
-### Clone
 
-```bash
-git clone https://github.com/Qursom/foodTech-app.git
-cd foodTech-app-mean-stack
-```
-
-### Environment
-
-Create **`backend/src/.env`** from **`backend/src/.env.example`**.  
-Full reference: [docs/03-environment-variables.md](docs/03-environment-variables.md)
-
-### Run backend
-
-```bash
-cd backend
-npm install
-npm start
-```
-
-API → **http://localhost:5000**
-
-### Run frontend
-
-```bash
-cd frontend
-npm install
-ng serve
-```
-
-App → **http://localhost:4200**
-
-### Seed demo data
-
-```bash
-cd backend
-npm run seed:rbac
-```
-
-### Production build
-
-```bash
-cd frontend
-npm run build
-```
-
-Build output is served by Express from `backend/built/dist`.
-
----
 
 ## What's included
 
@@ -272,57 +210,6 @@ Build output is served by Express from `backend/built/dist`.
 
 ---
 
-## Project structure
-
-```
-foodTech-app-mean-stack/
-├── backend/
-│   └── src/
-│       ├── configs/        # DB config
-│       ├── constants/      # Order status enums
-│       ├── models/         # User, Food, Order, Vendor
-│       ├── router/         # food, user, order, admin, delivery, chatbot
-│       ├── scripts/        # seed-rbac.ts
-│       ├── services/       # chatbot.service.ts (Gemini)
-│       └── server.ts
-├── frontend/
-│   └── src/app/
-│       ├── components/pages/landing-page/       # SaaS marketing
-│       ├── components/pages/admin-dashboard/    # Super admin module
-│       ├── components/pages/delivery-orders/    # Delivery dashboard
-│       ├── components/pages/vendor-foods/       # Vendor dashboard
-│       ├── components/partials/chatbot/         # AI chat widget
-│       ├── auth/guards/                         # Auth + role guards
-│       └── shared/utils/order-status.util.ts    # Tracking timeline
-└── docs/                   # Buyer handbook
-```
-
----
-
-## API endpoints (selected)
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/foods` | List all foods |
-| GET | `/api/foods/search/:term` | Search foods |
-| POST | `/api/users/login` | Login → JWT |
-| POST | `/api/users/register` | Register (customer, vendor, delivery) |
-| POST | `/api/orders/create` | Create order |
-| POST | `/api/orders/pay` | Pay order (verified Stripe PaymentIntent, or COD) |
-| POST | `/api/orders/stripe/payment-intent` | Create or reuse the Stripe PaymentIntent for the pending order |
-| POST | `/api/payments/stripe/webhook` | Stripe webhook (`payment_intent.succeeded`), raw body + signature |
-| GET | `/api/orders/list` | Customer order history |
-| GET | `/api/orders/track/:id` | Track single order |
-| GET | `/api/orders/vendor` | Vendor order list |
-| GET | `/api/admin/orders` | Super admin orders |
-| PATCH | `/api/admin/orders/:id/assign` | Assign delivery driver |
-| GET | `/api/delivery/orders` | Delivery queue |
-| PATCH | `/api/delivery/orders/:id/status` | Update delivery status |
-| POST | `/api/chatbot/send-message` | AI chatbot |
-
-Full reference: [docs/07-api-reference.md](docs/07-api-reference.md)
-
----
 
 ## Honest scope
 
