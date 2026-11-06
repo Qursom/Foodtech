@@ -211,17 +211,6 @@ flowchart LR
 ---
 
 
-## Honest scope
-
-FoodTech is a **starter kit**, not an enterprise marketplace out of the box:
-
-- Checkout promo codes (`FOOD10`, etc.) are **display-only**; Stripe charges the order's stored grand total
-- Each order is tied to **one vendor** (from the first cart item)
-- **Super admin** assigns delivery — vendors cannot assign drivers
-- No email/SMS notifications, subscription billing, or native mobile apps
-- Extend the kit using [docs/08-customization.md](docs/08-customization.md)
-
----
 
 ## Documentation
 
