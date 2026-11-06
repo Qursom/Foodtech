@@ -15,6 +15,9 @@
 
 🌐 **[Live Demo — Try FoodTech Free →](https://foodtech-app-mean-stack.onrender.com/)**
 
+ **[Live Video Demo  →](https://www.youtube.com/watch?v=mNUqGhLDCzo&t=9s)**
+
+
 _A full-stack food ordering marketplace with 4-role RBAC, admin & vendor dashboards, Stripe + Cash on Delivery, real-time tracking, and a Gemini AI chatbot._
 
 </div>
